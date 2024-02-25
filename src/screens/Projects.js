@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Projects = () => {
   return (
-    <>
+    <div className="Projects">
     <div className="projects" id="projects">
       <h1>PROJECTS</h1>
       <ProjectCard
@@ -120,7 +120,7 @@ const Projects = () => {
         />
     </div>
     <Footer/>
-    </>
+    </div>
   );
 };
 
