@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+} */
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.home {
+  background-color: black !important;
+  height: 100vh;
+}
+
+.homeImage {
+  background: url("./assets/2.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.homeImage::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  margin-top: 75px !important;
+}
+
+.carouselImage {
+  height: 80vh;
+}
+
+.home .cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.principles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: url("./assets/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.principles::before,
+.technical::before,
+.non-technical::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.principles div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  color: white;
+  z-index: 2;
+}
+
+.technical,
+.non-technical {
+  background: url("./assets/8.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+
+.technical div,
+.non-technical div {
+  position: relative;
+  z-index: 2 !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 100px;
+  height: 100%;
+}
+
+.non-technical {
+  background: url("./assets/7.jpg");
+  background-size: cover;
+}
+
+.non-technical div {
+  padding: 100px;
+  justify-content: space-evenly;
+}
+
+.non-technical h4 {
+  line-height: 35px;
+}
+
+.our-equipments {
+  background: url("./assets/3.jpg");
+  /* background-color: rgb(0,0,0,0.2); */
+  background-size: cover;
+  height: auto;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.our-equipments::before {
+  height: 100%;
+}
+
+.our-equipments table {
+  width: 800px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.our-equipments table td,
+.our-equipments table th {
+  font-weight: bold;
+  color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n + 1) > th,
+.table-striped > tbody > tr:nth-child(2n + 1) > td {
+  /* background-color: darkcyan; */
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(68, 250, 250);
+}
+
+.table-striped > tbody > tr:nth-child(2n) > th,
+.table-striped > tbody > tr:nth-child(2n) > td {
+  /* background-color: darkgoldenrod; */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: darkorange;
+}
+
+.table-striped thead tr th {
+  background-color: rgba(165, 42, 42, 0.807);
+}
+
+.table-striped tbody th,
+.table-striped tbody td:last-child,
+.table-striped thead th:first-child,
+.table-striped thead th:last-child {
+  text-align: center;
+}
+
+.our-equipments table tr {
+  transition: all 0.2s;
+}
+
+.our-equipments table tr:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-us{
+  background: url('./assets/4.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+.about-us::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutcard {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 30px 15px;
+  box-shadow: 2px 2px 4px darkgray;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutcard .profile {
+  width: 30%;
+  text-align: center;
+}
+
+.aboutcard .content {
+  width: 70%;
+}
+
+.aboutcard p{
+  font-size: 20px;
+}
+
+.aboutcard h4{
+  color: cyan;
+}
+.aboutcard h5{
+  color: orange;
+}
+
+.footer {
+  padding-top: 20px !important;
+}
+
+.footer .second-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding: 20px 40px;
+}
+
+.footer .second-footer .icons {
+  width: 50%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
