@@ -32,11 +32,6 @@
   padding: 0px;
 }
 
-.home {
-  background-color: black !important;
-  height: 100vh;
-}
-
 .home .video {
   position: relative;
   width: 100vw;
@@ -50,9 +45,9 @@
 }
 
 .home .video::before {
-  content: "Sri Sai Engineering And Techincal Services";
+  content: "";
   position: absolute;
-  font-size: 24px;
+  font-size: 30px;
   color: white;
   z-index: 2;
   background: rgba(0, 0, 0, 0.3);
@@ -61,6 +56,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text_animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.left-text,
+.right-text {
+  transition: all 2s ease-in-out;
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+  margin-right: 3px;
 }
 
 .carousel {
@@ -121,11 +136,11 @@
   width: 100%;
   max-width: 900px;
 }
-.principles h5{
+.principles h5 {
   width: 100%;
   max-width: 900px;
   text-align: justify;
-} 
+}
 
 .technical,
 .non-technical {
@@ -140,7 +155,8 @@
   align-items: center;
 }
 
-.technical div, .non-technical div{
+.technical div,
+.non-technical div {
   width: 100%;
   max-width: 900px;
   margin: auto;
@@ -150,7 +166,8 @@
   padding-bottom: 50px !important;
 }
 
-.technical div h5, .non-technical div h5{
+.technical div h5,
+.non-technical div h5 {
   margin: 10px;
 }
 
@@ -417,23 +434,24 @@
 .latest_projects div {
   width: 25%;
   border: 1px solid gray;
-  padding: 20px;
+  padding: 0px 20px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px 10px;
   box-shadow: 2px 2px 4px gray;
   min-width: 300px;
   transition: all 0.4s;
 }
 
-.latest_projects div:hover{
+.latest_projects div:hover {
   transform: scale(1.02);
   box-shadow: 1px 1px 2px gray;
 }
 
 .latest_projects div img {
-  width: 90%;
+  width: 75%;
   margin: auto;
-  max-width: 280px;
+  max-width: 250px;
+  display: block;
 }
 
 .latest_projects div h5 {
@@ -458,6 +476,7 @@
   max-width: 1000px;
   margin: auto;
   align-items: center;
+  justify-content: space-between;
 }
 
 .commitment > div {
@@ -470,11 +489,22 @@
   flex-direction: column;
 }
 
+.specialists div div div{
+  padding-left: 20px;
+}
+
 .commitment img {
   height: 200px;
-  margin-right:50px;
+  margin-right: 50px;
   border: 0px;
   border-radius: 20px;
+}
+
+.specialists img {
+  margin-left: 50px;
+  margin-right: 0px;
+  width: 300px;
+  height: auto;
 }
 
 @media (max-width: 1000px) {
