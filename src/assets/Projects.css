@@ -26,7 +26,6 @@
   font-weight: bold;
 }
 
-
 .projects .img,
 .no_demo {
   width: 35%;
@@ -39,6 +38,27 @@
   position: relative;
   height: 170px;
   width: 170px;
+}
+
+.no_logo{
+  position: relative;
+  padding: 10px;
+  font-size: 30px;
+  background: black;
+}
+
+.no_logo::before{
+  position: absolute;
+  content:"LOGO NOT AVAILABLE";
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.projects img{
+  background: white !important;
 }
 
 .projects .img video {

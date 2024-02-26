@@ -1,22 +1,14 @@
 import React from "react";
 import "../assets/Projects.css";
-import no_demo from "../assets/1.jpg";
 
-const ProjectCard = ({
-  direction,
-  name,
-  img,
-  titles,
-  values,
-  desc,
-}) => {
+const ProjectCard = ({ direction, name, img, titles, values, desc,logo }) => {
   return (
     <div className={direction}>
       {/* <img src={img} alt={name} /> */}
       {img ? (
         <img className="no_demo" src={img} alt="demo not available" />
       ) : (
-        <div className="no_demo" src={no_demo} alt="demo not available" />
+        <div className="no_demo no_logo"/>
       )}
       <div className="desc">
         <p className="heading">{name}</p>

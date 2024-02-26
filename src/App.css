@@ -25,7 +25,7 @@
 }
 
 .navbar {
-  padding: 0px;
+  padding: 0px 30px;
 }
 
 .navbar-brand {
@@ -37,29 +37,47 @@
   height: 100vh;
 }
 
-.homeImage {
-  background: url("./assets/2.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+.home .video {
   position: relative;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.homeImage::before {
-  position: absolute;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+.home .video video {
   width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home .video::before {
+  content: "Sri Sai Engineering And Techincal Services";
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel {
   margin-top: 75px !important;
+  height: 80vh;
+  width: 70vw;
+  margin: auto;
 }
 
 .carouselImage {
   height: 80vh;
+  width: 70vw;
+}
+
+.carousel.pointer-event {
+  display: flex;
+  align-items: center;
 }
 
 .home .cards {
@@ -74,11 +92,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background: url("./assets/5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .principles::before,
@@ -87,7 +106,7 @@
   position: absolute;
   content: "";
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -96,18 +115,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
   color: white;
   z-index: 2;
+  width: 100%;
+  max-width: 900px;
 }
+.principles h5{
+  width: 100%;
+  max-width: 900px;
+  text-align: justify;
+} 
 
 .technical,
 .non-technical {
   background: url("./assets/8.jpg");
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: auto;
   background-size: cover;
   color: white;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.technical div, .non-technical div{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  text-align: justify;
+  padding: 0px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.technical div h5, .non-technical div h5{
+  margin: 10px;
 }
 
 .technical div,
@@ -119,7 +163,8 @@
   justify-content: center;
   flex-direction: column;
   padding: 0px 100px;
-  height: 100%;
+  height: auto;
+  padding: 20px auto;
 }
 
 .non-technical {
@@ -143,6 +188,7 @@
   height: auto;
   position: relative;
   background-attachment: fixed;
+  overflow-x: auto;
 }
 
 .our-equipments::before {
@@ -150,11 +196,12 @@
 }
 
 .our-equipments table {
-  width: 800px;
+  width: 700px;
   margin: auto;
   position: relative;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
+  min-width: 500px;
 }
 
 .our-equipments table td,
@@ -196,15 +243,15 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.Projects{
-  background: url('./assets/9.jpg');
+.Projects {
+  background: url("./assets/9.jpg");
   background-size: cover;
   width: 100vw;
-  background-attachment: fixed; 
-  position: relative; 
+  background-attachment: fixed;
+  position: relative;
 }
 
-.Projects::before{
+.Projects::before {
   position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -213,15 +260,15 @@
   height: 100%;
 }
 
-.about-us{
-  background: url('./assets/4.jpg');
+.about-us {
+  background: url("./assets/4.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
   position: relative;
 }
 
-.about-us::before{
+.about-us::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -255,14 +302,14 @@
   width: 70%;
 }
 
-.aboutcard p{
+.aboutcard p {
   font-size: 20px;
 }
 
-.aboutcard h4{
+.aboutcard h4 {
   color: cyan;
 }
-.aboutcard h5{
+.aboutcard h5 {
   color: orange;
 }
 
@@ -285,4 +332,184 @@
   max-width: 250px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.equipments {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+
+.equipment {
+  margin: 10px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+
+.equipment img {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.equipment div {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.equipment_container {
+  position: relative;
+  /* width: 50%; */
+  width: 300px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.equipment_container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.latest_projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.latest_projects div {
+  width: 25%;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 4px gray;
+  min-width: 300px;
+  transition: all 0.4s;
+}
+
+.latest_projects div:hover{
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.latest_projects div img {
+  width: 90%;
+  margin: auto;
+  max-width: 280px;
+}
+
+.latest_projects div h5 {
+  color: blue;
+}
+
+.latest_projects div p {
+  margin-bottom: 5px;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.commitment {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+}
+
+.commitment > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.commitment div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.commitment img {
+  height: 200px;
+  margin-right:50px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+  .our-equipments table {
+    width: 90%;
+  }
+  .home .video::before {
+    font-size: 30px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .carousel {
+    margin-top: 50px !important;
+    width: 90% !important;
+    height: auto;
+  }
+  .carouselImage {
+    width: 90% !important;
+    /* height: 50%; */
+    margin: auto;
+  }
+  .latest_projects div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    width: 100%;
+  }
+  .home .video::before {
+    font-size: 20px;
+    padding: 0px 30px;
+  }
 }
