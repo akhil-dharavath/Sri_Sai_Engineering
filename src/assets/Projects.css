@@ -109,21 +109,26 @@
 
   .projects .left .img,
   .projects .right .img,
-  .projects .desc,
-  .no_demo {
+  .projects .desc{
     width: 95%;
     max-width: 400px;
     border-radius: 10px !important;
   }
+  
+  .no-demo{
+    width: 95%;
+    max-width: 300px !important;
+    border-radius: 10px !important;
+  }
 
-  .projects .desc {
+  .projects .desc, .projects .right .desc {
     padding: 0px 5px;
+    margin: 0px;
   }
 
   .projects .desc .heading {
     margin-bottom: 0px;
     margin-top: 10px;
-    color: #0087ca;
   }
   .projects .img video,
   .no_demo,

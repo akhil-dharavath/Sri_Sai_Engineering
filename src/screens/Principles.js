@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 
 const Principles = () => {
+  useEffect(() => {
+    document.title = 'Principles - Sri Sai Engineering & Technical Services';
+  }, []);
+
   return (
     <>
       <div className="principles px-5">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import HomeCard from "../components/HomeCard";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
@@ -6,16 +6,26 @@ import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home - Sri Sai Engineering & Technical Services";
+  }, []);
+
   return (
     <div className="home">
       <div className="video">
-        {/* <video muted autoPlay loop> */}
-        <video muted>
+        <video muted autoPlay loop poster={require('../assets/homePic.png')}>
+        {/* <video muted poster={require("../assets/homePic.png")}> */}
           <source
             src={require("../assets/company_images/home.mp4")}
             type="video/mp4"
           />
+          <img
+            src={require("../assets/homePic.png")}
+            alt="when video not supported"
+          />
         </video>
+
+        {/* Animation text */}
         <div className="text_animation">
           <div
             data-aos="fade-left"
@@ -33,92 +43,84 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="cards mb-5">
-        <HomeCard
-          title="Mission"
-          desc="Sri Sai Engineering & Technical Service will provide efficient and
-          innovative services in its area of expertise and be a safe and
-          considerate employer."
-        />
-        <HomeCard
-          title="Vision"
-          desc="To contribute towards the growth by increasingly, and achieving customer satisfaction not only for outstanding workmanship, but also quality design, concepts functionality and style."
-        />
-      </div> */}
-        <h2 className="text-center pt-5 text-primary">Our Commitment</h2>
-        <div className="commitment pb-5">
-          <img src={require("../assets/commit.jpg")} alt="commitment" />
+
+      {/* Our Commitments */}
+      <h2 className="text-center pt-5 text-primary">Our Commitment</h2>
+      <div className="commitment pb-5">
+        <img src={require("../assets/commit.jpg")} alt="commitment" />
+        <div>
           <div>
-            <div>
-              <p>
-                <b>Mission: </b>
-                Sri Sai Engineering & Technical Service will provide efficient
-                and innovative services in its area of expertise and be a safe
-                and considerate employer.
-              </p>
-            </div>
-            <div>
-              <p>
-                <b>Vision: </b>
-                To contribute towards the growth by increasingly, and achieving
-                customer satisfaction not only for outstanding workmanship, but
-                also quality design, concepts functionality and style.
-              </p>
-            </div>
+            <p>
+              <b>Mission: </b>
+              Sri Sai Engineering & Technical Service will provide efficient and
+              innovative services in its area of expertise and be a safe and
+              considerate employer.
+            </p>
+          </div>
+          <div>
+            <p>
+              <b>Vision: </b>
+              To contribute towards the growth by increasingly, and achieving
+              customer satisfaction not only for outstanding workmanship, but
+              also quality design, concepts functionality and style.
+            </p>
           </div>
         </div>
+      </div>
 
-        <h2 className="text-center pt-5 text-primary">Specialists In</h2>
-        <div className="commitment pb-5 specialists">
+      {/* Specialists In */}
+      <h2 className="text-center pt-5 text-primary">Specialists In</h2>
+      <div className="commitment pb-5 specialists">
+        <div>
           <div>
+            <p>
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
+              Sponge iron of 50tpd, 100tpd & 350tpd
+            </p>
+            <p>
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
+              Power plants of 12MW, 25MW, 30MW, 40MW & 500MW
+            </p>
+            <p>
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
+              Steel plants:
+            </p>
             <div>
               <p>
-                <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-                Sponge iron of 50tpd, 100tpd & 350tpd
+                <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
+                Rolling Mill - 0.5 Million ton & 1 Million ton elevated mills
               </p>
               <p>
-                <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-                Power plants of 12MW, 25MW, 30MW, 40MW & 500MW
+                <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
+                Furnaces - 15MT, 20MT, 30MT induction furnaces
               </p>
               <p>
-                <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-                Steel plants:
-              </p>
-              <div>
-                <p>
-                  <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                  Rolling Mill - 0.5 Million ton & 1 Million ton elevated mills
-                </p>
-                <p>
-                  <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                  Furnaces - 15MT, 20MT, 30MT induction furnaces
-                </p>
-                <p>
-                  <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} /> Blast
-                  Furnaces - 380MQ, 680MQ & 980MQ
-                </p>
-                <p>
-                  <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} /> Center
-                  Plant - 75M square
-                </p>
-                <p>
-                  <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} /> Oxygen
-                  Plant - 350MQ & 680MQ
-                </p>
-              </div>
-              <p>
-                <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-                Fertilizers Units
+                <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
+                Blast Furnaces - 380MQ, 680MQ & 980MQ
               </p>
               <p>
-                <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} /> STP
-                plants
+                <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
+                Center Plant - 75M square
+              </p>
+              <p>
+                <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
+                Oxygen Plant - 350MQ & 680MQ
               </p>
             </div>
+            <p>
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
+              Fertilizers Units
+            </p>
+            <p>
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
+              STP plants
+            </p>
           </div>
-          <img src={require("../assets/specialist.jpg")} alt="commitment" />
         </div>
+        <img src={require("../assets/specialist.jpg")} alt="commitment" />
+      </div>
 
+      {/* Latest Projects */}
       <h2 className="text-center pt-2 text-primary">Latest projects</h2>
       <div className="latest_projects">
         <div>
@@ -207,6 +209,7 @@ const Home = () => {
         </div> */}
       </div>
 
+      {/* Images Carousel */}
       <Carousel />
 
       <Footer />

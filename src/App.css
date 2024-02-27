@@ -34,7 +34,7 @@
 
 .home .video {
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -67,6 +67,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  width: 100%;
 }
 
 .left-text,
@@ -80,14 +81,14 @@
 
 .carousel {
   margin-top: 75px !important;
-  height: 80vh;
-  width: 70vw;
+  width: 900px;
+  height: 600px;
   margin: auto;
 }
 
 .carouselImage {
-  height: 80vh;
-  width: 70vw;
+  width: 850px;
+  height: 550px;
 }
 
 .carousel.pointer-event {
@@ -115,6 +116,19 @@
   position: relative;
 }
 
+.technical,
+.non-technical {
+  background: url("./assets/8.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+  color: white;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
 .principles::before,
 .technical::before,
 .non-technical::before {
@@ -140,19 +154,6 @@
   width: 100%;
   max-width: 900px;
   text-align: justify;
-}
-
-.technical,
-.non-technical {
-  background: url("./assets/8.jpg");
-  height: auto;
-  width: auto;
-  background-size: cover;
-  color: white;
-  position: relative;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
 }
 
 .technical div,
@@ -227,6 +228,10 @@
   color: white;
 }
 
+.table-wrapper{
+  padding-bottom: 50px;
+}
+
 .table-striped > tbody > tr:nth-child(2n + 1) > th,
 .table-striped > tbody > tr:nth-child(2n + 1) > td {
   /* background-color: darkcyan; */
@@ -263,7 +268,7 @@
 .Projects {
   background: url("./assets/9.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   background-attachment: fixed;
   position: relative;
 }
@@ -489,7 +494,11 @@
   flex-direction: column;
 }
 
-.specialists div div div{
+.commitment div div p {
+  margin-bottom: 5px;
+}
+
+.specialists div div div {
   padding-left: 20px;
 }
 
@@ -507,6 +516,31 @@
   height: auto;
 }
 
+.who_we_are{
+  text-align: center;
+}
+
+.about-us > div h1{
+  padding-top: 30px;
+  margin-bottom: 15px;
+  color: aqua;
+}
+
+.about-us > div {
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.management .people{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1000px) {
   .our-equipments table {
     width: 90%;
@@ -516,21 +550,142 @@
     padding: 0px 50px;
     text-align: center;
   }
+  .left-text,
+  .right-text {
+    font-size: 25px;
+  }
   .carousel {
     margin-top: 50px !important;
-    width: 90% !important;
     height: auto;
+    width: 90%;
+    max-width: 750px;
+    max-height: 500px;
   }
   .carouselImage {
-    width: 90% !important;
-    /* height: 50%; */
+    height: auto;
+    width: 90%;
+    max-width: 750px;
     margin: auto;
+    max-height: 500px;
   }
   .latest_projects div {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .commitment img {
+    height: 175px;
+    margin-right: 25px;
+  }
+  .specialists img {
+    margin-left: 15px;
+    height: auto;
+    width: 250px;
+  }
+  .css-1321ahv-MuiSvgIcon-root{
+    font-size: 125px !important;
+  }
+  .principles{
+    padding: 20px !important;
+  }
+  .principles h5{
+    padding: 0px !important;
+    margin: 0px;
+  }
+  .principles h5, .technical div, .non-technical div{
+    width: 85%;
+    font-size: 18px;
+  }
+  .principles h5 span, .technical div h5 span{
+    font-size: 22px !important;
+  }
+  .principles div{
+    margin-top: 10px;
+  }
+  .non-technical div h5{
+    margin: 5px; 
+    font-size: 18px;
+  }
+  .table-wrapper{
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  .table-striped{
+    width: 90%;
+  }
+  .about-us > div{
+    width: 85%;
+    margin: 0px auto !important;
+    padding: 10px 0px !important;
+  }
+  .about-us > div h1{
+    margin-bottom: 5px !important;
+    font-size: 25px;
+    padding-top: 0px;
+  }
+  .who_we_are h1{
+    padding-top: 20px !important;
+  }
+  .background{
+    padding-top: 20px !important;
+    width: 85%;
+  }
+  .what_we_offer h5{
+    margin-bottom: 0px !important;
+  }
+  .about-us h4, .about-us h5{
+    font-size: 20px;
+  }
+  .aboutcard{
+    padding: 10px;
+  }
+  .aboutcard{
+    flex-direction: column;
+  }
+  .aboutcard .profile{
+    width: 100%;
+  }
+  .aboutcard .content{
+    width: 95%;
+  }
+  .aboutcard h4{
+    font-size: 25px;
+  }
+  .aboutcard h5{
+    font-size: 20px;
+  }
+  .aboutcard img{
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .specialists {
+    background: url("./assets/specialist.jpg") !important;
+    background-size: cover !important;
+    /* background-position: center; */
+    background-attachment: fixed !important;
+    padding-bottom: 0px !important;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+  }
+  .specialists::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);    
+    border-radius: 10px;
+  }
+  .specialists div{
+    z-index: 2;
+    padding: 5px;
+  }
+  .specialists img{
+    display: none;
   }
 }
 
@@ -541,5 +696,112 @@
   .home .video::before {
     font-size: 20px;
     padding: 0px 30px;
+  }
+  .text_animation{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-text,
+  .right-text {
+    font-size: 18px;
+  }
+  .carousel {
+    margin-top: 30px !important;
+    width: 95%;
+  }
+  .carouselImage {
+    width: 95%;
+  }
+  .commitment img {
+    display: none;
+  }
+  .commitment {
+    background: url("./assets/commit.jpg");
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px !important;
+  }
+  .commitment::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+  .commitment div {
+    z-index: 2;
+    color: white;
+  }
+  .commitment div div {
+    padding: 10px;
+  }
+  .commitment div div b {
+    color: orange;
+  }
+  .css-1321ahv-MuiSvgIcon-root{
+    font-size: 100px !important;
+  }
+  .specialists div{
+    padding: 0px;
+  }
+  .specialists div div p{
+    margin-bottom: 0px !important;
+  }
+  .specialists div div div {
+    padding: 0px;
+    padding-left: 10px;
+  }
+  .principles{
+    padding: 30px 10px !important;
+  }
+  .principles h5, .technical div {
+    width: 95%;
+    font-size: 17px;
+  }
+  .principles h5 span{
+    font-size: 20px !important;
+  }
+  .technical div h5 span{
+    font-size: 18px !important;
+  }
+  .principles div{
+    margin-top: 5px;
+  }
+  .table-wrapper{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .about-us > div{
+    width: 90%;
+  }
+  .background h1{
+    padding: 0px !important;
+  }
+  .about-us h4, .about-us h5{
+    font-size: 18px !important;
+  }
+  .aboutcard{
+    width: 100%;
+  }
+  .aboutcard h4{
+    font-size: 22px !important;
+  }
+  .aboutcard h5{
+    font-size: 18px !important;
+  }
+  .aboutcard p{
+    font-size: 18px;
+  }
+  .aboutcard img{
+    width: 100px !important;
   }
 }

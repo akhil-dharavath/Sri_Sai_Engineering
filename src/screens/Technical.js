@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 
 const Technical = () => {
+  useEffect(() => {
+    document.title = 'Technical - Sri Sai Engineering & Technical Services';
+  }, []);
+
   return (
     <>
       <div className="technical">
@@ -59,7 +63,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Cost Estimate Preparation
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Accurate cost estimations tailored to your project needs and budget
             constraints.
@@ -67,15 +71,15 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Construction Supervision
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Overseeing construction activities, particularly those not mandating
             an architect or engineer, to maintain quality and compliance.
           </h5>
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
-              Lead Hazard Reduction and Abatement Oversight
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              Lead Hazard Reduction
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Determining lead hazard reduction needs and providing oversight for
             lead abatement activities.
@@ -83,7 +87,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Temporary Relocation Coordination
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Facilitating temporary relocations when necessary during
             construction or renovation.
@@ -91,7 +95,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Financing Cost Assistance
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Providing assistance with financing costs, including preparation of
             security agreements and handling recording or filing fees.
@@ -99,7 +103,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Application Processing
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Streamlining the processing of individual applications for
             assistance.
@@ -107,7 +111,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Income Eligibility Determination
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Ensuring compliance with income eligibility requirements and
             verifying applicant information.
@@ -115,7 +119,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Value Determination
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Conducting value assessments for new construction or determining
             post-rehabilitation values for existing structures.
@@ -123,7 +127,7 @@ const Technical = () => {
           <h5>
             <span style={{ color: "orange", fontSize: "25px" }}>
               Environmental Clearance Processes
-              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />
+              <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             </span>
             Managing project-specific environmental clearance procedures to meet
             regulatory standards.

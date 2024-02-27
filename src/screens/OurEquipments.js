@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import EquipmentCard from "../components/EquipmentCard";
 
 const OurEquipments = () => {
+  useEffect(() => {
+    document.title = 'Our Equipments - Sri Sai Engineering & Technical Services';
+  }, []);
+
   return (
     <>
       <div className="our-equipments">
@@ -114,6 +118,8 @@ const OurEquipments = () => {
             amount="10,000 M2"
           />
         </div>
+
+        <div className="table-wrapper">
         <table className="table table-striped">
           <thead>
             <tr>
@@ -230,7 +236,9 @@ const OurEquipments = () => {
             </tr>
           </tbody>
         </table>
-        <div className="py-5" />
+        </div>
+
+        {/* <div className="py-5" /> */}
       </div>
 
       <Footer />

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 
 const NonTechnical = () => {
+  useEffect(() => {
+    document.title = 'Non Technical - Sri Sai Engineering & Technical Services';
+  }, []);
+
   return (
     <>
       <div className="non-technical">
