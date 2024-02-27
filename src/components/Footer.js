@@ -15,7 +15,7 @@ const Footer = () => {
           <p>Copyright © 2023 Sri Sai Engineering & Techincal Services.</p>
           <p>Powered by Sri Sai Engineering & Techincal Services.</p>
         </div>
-        <div className="icons d-flex justify-content-center">
+        <div className="icons">
           <IconButton
             sx={{ "&:hover": { color: "#316FF6", background: "white" } }}
           >

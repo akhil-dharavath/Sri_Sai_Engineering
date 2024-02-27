@@ -25,7 +25,7 @@ const NonTechnical = () => {
         </h4>
       </div> */}
         <div>
-          <h5>At [Your Company/Organization Name], our services include:</h5>
+          <h5>At Sri Sai Engineering & Technical Services, our services include:</h5>
           <h5>
             <SwipeRightAltIcon sx={{ fontSize: 30, color: "orange" }} />{" "}
             Advising Management Committees on Service Recipients' Operations

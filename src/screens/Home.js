@@ -46,7 +46,7 @@ const Home = () => {
 
       {/* Our Commitments */}
       <h2 className="text-center pt-5 text-primary">Our Commitment</h2>
-      <div className="commitment pb-5">
+      <div className="commitment">
         <img src={require("../assets/commit.jpg")} alt="commitment" />
         <div>
           <div>
@@ -69,8 +69,8 @@ const Home = () => {
       </div>
 
       {/* Specialists In */}
-      <h2 className="text-center pt-5 text-primary">Specialists In</h2>
-      <div className="commitment pb-5 specialists">
+      <h2 className="text-center pt-3 text-primary">Specialists In</h2>
+      <div className="commitment specialists">
         <div>
           <div>
             <p>
@@ -121,7 +121,7 @@ const Home = () => {
       </div>
 
       {/* Latest Projects */}
-      <h2 className="text-center pt-2 text-primary">Latest projects</h2>
+      <h2 className="text-center pt-3 text-primary">Latest projects</h2>
       <div className="latest_projects">
         <div>
           <img src={require("../assets/company_logos/VRKP.webp")} alt="vrkp" />

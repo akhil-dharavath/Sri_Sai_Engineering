@@ -55,6 +55,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  top: 0;
+  left: 0;
 }
 
 .projects img{
@@ -139,7 +141,7 @@
 
 @media (max-width: 576px) {
   .no_demo {
-    height: 200px;
+    height: auto;
   }
 
   .no_demo::after {

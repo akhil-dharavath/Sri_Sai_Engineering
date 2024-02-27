@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  hyphens: auto;
 }
 
 /* .navbar {
@@ -541,7 +542,20 @@
   flex-wrap: wrap;
 }
 
+.icons{
+  display: flex;
+  justify-content: center;
+}
+
+.css-1321ahv-MuiSvgIcon-root{
+  height: auto !important;
+  width: auto !important;
+}
+
 @media (max-width: 1000px) {
+  .navbar{
+    padding: 0px 20px;
+  }
   .our-equipments table {
     width: 90%;
   }
@@ -596,6 +610,7 @@
   .principles h5, .technical div, .non-technical div{
     width: 85%;
     font-size: 18px;
+    padding-top: 15px !important;
   }
   .principles h5 span, .technical div h5 span{
     font-size: 22px !important;
@@ -658,38 +673,33 @@
   .aboutcard img{
     width: 150px !important;
   }
+  .second-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-footer .content p{
+    margin-bottom: 0px !important;
+  }
+  .icons{
+    width: 100% !important;
+    justify-content: space-evenly !important;
+  }
 }
 
 @media (max-width: 700px) {
-  .specialists {
-    background: url("./assets/specialist.jpg") !important;
-    background-size: cover !important;
-    /* background-position: center; */
-    background-attachment: fixed !important;
-    padding-bottom: 0px !important;
-    color: white;
-    position: relative;
-    border-radius: 10px;
-  }
-  .specialists::before{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);    
-    border-radius: 10px;
-  }
-  .specialists div{
-    z-index: 2;
-    padding: 5px;
-  }
   .specialists img{
+    display: none;
+  }
+  .commitment img {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
+  .navbar{
+    padding: 0px;
+  }
   .home {
     width: 100%;
   }
@@ -714,32 +724,6 @@
   }
   .commitment img {
     display: none;
-  }
-  .commitment {
-    background: url("./assets/commit.jpg");
-    background-position: center;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    position: relative;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px !important;
-  }
-  .commitment::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-  }
-  .commitment div {
-    z-index: 2;
-    color: white;
   }
   .commitment div div {
     padding: 10px;
@@ -766,6 +750,7 @@
   .principles h5, .technical div {
     width: 95%;
     font-size: 17px;
+    padding-top: 10px !important;
   }
   .principles h5 span{
     font-size: 20px !important;
