@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <div className="home">
       <div className="video">
-        <video muted autoPlay loop poster={require('../assets/homePic.png')}>
-        {/* <video muted poster={require("../assets/homePic.png")}> */}
+        {/* <video muted autoPlay loop poster={require('../assets/homePic.png')}> */}
+        <video muted poster={require("../assets/homePic.png")}>
           <source
             src={require("../assets/company_images/home.mp4")}
             type="video/mp4"
@@ -32,14 +32,14 @@ const Home = () => {
             data-aos-duration="1000"
             className={`left-text`}
           >
-            Sri Sai Engineering And
+            Sri Sai Engineering
           </div>
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
             className={`right-text`}
           >
-            Technical Services
+            & Technical Services
           </div>
         </div>
       </div>
@@ -75,11 +75,11 @@ const Home = () => {
           <div>
             <p>
               <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-              Sponge iron of 50tpd, 100tpd & 350tpd
+              Sponge iron of 50 TPD, 100 TPD & 350 TPD
             </p>
             <p>
               <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
-              Power plants of 12MW, 25MW, 30MW, 40MW & 500MW
+              Power plants of 12 MW, 25 MW, 30 MW, 40 MW & 500 MW
             </p>
             <p>
               <SwipeRightAltIcon sx={{ fontSize: 30, color: "darkorange" }} />{" "}
@@ -92,19 +92,19 @@ const Home = () => {
               </p>
               <p>
                 <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                Furnaces - 15MT, 20MT, 30MT induction furnaces
+                Furnaces - 15 MT, 20 MT, 30 MT induction furnaces
               </p>
               <p>
                 <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                Blast Furnaces - 380MQ, 680MQ & 980MQ
+                Blast Furnaces - 380 m<sup>3</sup>, 680 m<sup>3</sup> & 980 m<sup>3</sup>
               </p>
               <p>
                 <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                Center Plant - 75M square
+                Sinter Plant - 75M sqm
               </p>
               <p>
                 <ArrowRightIcon sx={{ fontSize: 30, color: "darkblue" }} />{" "}
-                Oxygen Plant - 350MQ & 680MQ
+                Oxygen Plant - 350 m<sup>3</sup> & 680 m<sup>3</sup>
               </p>
             </div>
             <p>
@@ -141,7 +141,7 @@ const Home = () => {
             alt="smiore"
           />
           <h5>SMIORE MANGANESE & ORES LTD</h5>
-          <p>❖ 380 cum Blast Furnace civil work</p>
+          <p>❖ 380 m<sup>3</sup> Blast Furnace civil work</p>
           <p>❖ Railway Under Bridge civil work</p>
           <p>
             <b>Year:</b> 2023 – 2024

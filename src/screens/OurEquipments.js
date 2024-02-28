@@ -88,7 +88,7 @@ const OurEquipments = () => {
             amount="05"
           />
           <EquipmentCard
-            name="	Welding machines"
+            name="Welding machines"
             src={require("../assets/equipments/welding.jpeg")}
             amount="20"
           />

@@ -12,7 +12,6 @@ const Navbar = () => {
           <img
             src={require("../assets/company_images/logo.jpeg")}
             alt="logo"
-            style={{ width: "75px" }}
           />
         </a>
         <button

@@ -62,7 +62,7 @@ const About = () => {
             name="T.R.S.Narayana"
             position="Managing Director"
             content="As a founding member of S.S.E.T.Service, Narayana plays the role of
-          the principal contractor. With over 16 years of experience in handling
+          the principal contractor. With over 20 years of experience in handling
           civil projects. Through his recognition of market opportunities and
           desire to build a reputable and suitable contracting business.
           Narayana has been able to develop the company into a major player in
