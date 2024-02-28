@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <div className="home">
       <div className="video">
-        {/* <video muted autoPlay loop poster={require('../assets/homePic.png')}> */}
-        <video muted poster={require("../assets/homePic.png")}>
+        <video muted autoPlay loop poster={require('../assets/homePic.png')}> 
+        {/* <video muted poster={require("../assets/homePic.png")}> */}
           <source
             src={require("../assets/company_images/home.mp4")}
             type="video/mp4"
