@@ -44,7 +44,7 @@ const Navbar = () => {
                 Principles
               </Link>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className={`nav-link dropdown-toggle ${
                   location === "technical" && "active"
@@ -68,6 +68,11 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
+            </li> */}
+            <li className="nav-item">
+              <Link className={`nav-link ${location === "technical" && "active"}`} to="/technical">
+                Support
+              </Link>
             </li>
             <li className="nav-item">
               <Link className={`nav-link ${location === "projects" && "active"}`} to="/projects">
